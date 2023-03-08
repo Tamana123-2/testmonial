@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+:root {
+--Moderate-violet: hsl(263, 55%, 52%);
+--Very-dark-grayish-blue: hsl(217, 19%, 35%);
+--Very-dark-blackish-blue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(0, 0%, 81%);
+--Light-grayish-blue: hsl(210, 46%, 95%);  
+--ff-medium: 500;
+--ff-bold: 600;
+}
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--Light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.container {
+    font-size: 13px;
+    font-weight: var(--ff-medium);
+    display: grid;
+    grid-gap: 1rem;
+    margin: 1rem;
+    font-family: 'Barlow Semi Condensed';
+    color: white;
+}
+.box-1, .box-2, .box-3, .box-4, .box-5 {
+    padding: 1.5rem;
+    max-width: 100%;
+    border-radius: 7px;
+}
+img {
+    height: 2.2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+.box-3, .box-5 {
+    background-color: white;
+    color: black;
+}
+header {
+    display: inline-block;
+    margin-left: .85rem;
+    line-height: 8px;
+}
+span {
+    opacity: 0.5;
+}
+.first, .second, .third, .fourth, .fifth {
+    opacity: 0.7;
+}
+header p {
+    font-weight: var(--ff-bold);
+}
+.box-1 {
+    background-color: hsl(263, 55%, 52%);
+    background: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right 60px top;
+}
+.belo, .zelo, .velo, .melo, .nelo {
+    font-weight: var(--ff-bold);
+    font-size: 15px;
+}
+.one {
+    background-color: var(--Moderate-violet);
+    border-radius: 7px;
+}
+.box-2 {
+    background-color: var(--Very-dark-grayish-blue);
+}
+.box-4 {
+    background-color: var(--Very-dark-blackish-blue);
+}
+@media (min-width: 1440px) {
+    html {
+        padding: 150px 120px;
+    }
+    .container {
+        box-sizing: border-box;
+        margin: 0 auto;
+        height: 560px;
+        width: auto;
+        display: grid;
+        grid-template-areas: 'a a b c'
+        'd e e c';
+        grid-gap: 20px;
+    }
+    .one {
+        grid-area: a;
+        width: 600px;
+        max-height: 280px;
+    }
+    .box-2 {
+        grid-area: b;
+        width:  300px;
+        max-height: 280px;
+    }
+    .box-5 {
+        grid-area: c;
+        width: auto;
+        height: auto;
+        overflow-y: scroll;
+        padding: 20px;
+    }
+    .box-3 {
+        grid-area: d;
+        width: 300px;
+        max-height: 280px;
+    }
+    .box-4 {
+        grid-area: e;
+        width: 600px;
+        max-height: 280px;
+    }
+    .container {
+      box-shadow: 10px 10px 23px rgb(110, 105, 107,);
+     margin-top: 0;  
+    }
+     
+}
